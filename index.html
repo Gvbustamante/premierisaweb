@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mis XV Años – Sofía García</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Lato:wght@300;400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav id="navbar">
+    <ul>
+      <li><a href="#inicio">Inicio</a></li>
+      <li><a href="#cuenta-regresiva">Cuenta Regresiva</a></li>
+      <li><a href="#galeria">Galería</a></li>
+      <li><a href="#programa">Programa</a></li>
+      <li><a href="#confirmacion">Confirmación</a></li>
+    </ul>
+  </nav>
+
+  <!-- HERO -->
+  <section id="inicio" class="hero">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <p class="hero-pre">Con la bendición de Dios y el amor de mi familia</p>
+      <h1>Sofía García</h1>
+      <p class="hero-sub">celebra sus</p>
+      <p class="hero-xv">XV Años</p>
+      <p class="hero-date">Sábado 20 de Septiembre, 2025</p>
+      <a href="#confirmacion" class="btn">Confirmar Asistencia</a>
+    </div>
+    <div class="scroll-hint">&#8595;</div>
+  </section>
+
+  <!-- CUENTA REGRESIVA -->
+  <section id="cuenta-regresiva" class="countdown-section">
+    <h2>El gran día se acerca</h2>
+    <div id="countdown" class="countdown-grid">
+      <div class="countdown-item"><span id="dias">00</span><label>Días</label></div>
+      <div class="countdown-item"><span id="horas">00</span><label>Horas</label></div>
+      <div class="countdown-item"><span id="minutos">00</span><label>Minutos</label></div>
+      <div class="countdown-item"><span id="segundos">00</span><label>Segundos</label></div>
+    </div>
+  </section>
+
+  <!-- SOBRE LA QUINCEAÑERA -->
+  <section id="sobre" class="about-section">
+    <div class="about-inner">
+      <div class="about-img">
+        <div class="img-placeholder">
+          <span>&#10084;</span>
+          <p>Foto de<br />Sofía</p>
+        </div>
+      </div>
+      <div class="about-text">
+        <h2>Mi Historia</h2>
+        <p>
+          Hoy quince años se convierten en la puerta de un nuevo capítulo lleno de
+          sueños, aventuras y amor. Cada momento vivido me ha formado en quien soy,
+          y nada sería posible sin el apoyo incondicional de mi familia y amigos.
+        </p>
+        <p>
+          Los invito a compartir esta noche mágica conmigo y a ser parte de uno de
+          los recuerdos más hermosos de mi vida.
+        </p>
+        <p class="about-signature">Con amor, Sofía &#10084;</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- GALERÍA -->
+  <section id="galeria" class="gallery-section">
+    <h2>Galería</h2>
+    <p class="section-sub">Momentos que guardan mi historia</p>
+    <div class="gallery-grid">
+      <div class="gallery-card" style="--i:1"><span>&#9733;</span></div>
+      <div class="gallery-card" style="--i:2"><span>&#10084;</span></div>
+      <div class="gallery-card" style="--i:3"><span>&#9825;</span></div>
+      <div class="gallery-card" style="--i:4"><span>&#10048;</span></div>
+      <div class="gallery-card" style="--i:5"><span>&#9786;</span></div>
+      <div class="gallery-card" style="--i:6"><span>&#9728;</span></div>
+    </div>
+    <p class="gallery-note">Las fotos serán actualizadas próximamente</p>
+  </section>
+
+  <!-- PROGRAMA -->
+  <section id="programa" class="program-section">
+    <h2>Programa del Evento</h2>
+    <p class="section-sub">Sábado 20 de Septiembre, 2025</p>
+    <div class="timeline">
+      <div class="timeline-item left">
+        <div class="timeline-content">
+          <span class="time">6:00 PM</span>
+          <h3>Misa de Acción de Gracias</h3>
+          <p>Parroquia San José<br />Calle Principal 123</p>
+        </div>
+      </div>
+      <div class="timeline-item right">
+        <div class="timeline-content">
+          <span class="time">7:30 PM</span>
+          <h3>Recepción de Invitados</h3>
+          <p>Salón de Fiestas El Jardín<br />Av. Las Flores 456</p>
+        </div>
+      </div>
+      <div class="timeline-item left">
+        <div class="timeline-content">
+          <span class="time">8:00 PM</span>
+          <h3>Vals de Honor</h3>
+          <p>Entrada de la quinceañera<br />y su chambelán principal</p>
+        </div>
+      </div>
+      <div class="timeline-item right">
+        <div class="timeline-content">
+          <span class="time">8:30 PM</span>
+          <h3>Cena</h3>
+          <p>Banquete y brindis<br />en honor a Sofía</p>
+        </div>
+      </div>
+      <div class="timeline-item left">
+        <div class="timeline-content">
+          <span class="time">10:00 PM</span>
+          <h3>Baile y Celebración</h3>
+          <p>¡Que comience la fiesta!<br />DJ y música en vivo</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONFIRMACIÓN -->
+  <section id="confirmacion" class="rsvp-section">
+    <h2>Confirma tu Asistencia</h2>
+    <p class="section-sub">Tu presencia es el mejor regalo</p>
+    <form id="rsvp-form" class="rsvp-form">
+      <div class="form-group">
+        <label for="nombre">Nombre completo *</label>
+        <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required />
+      </div>
+      <div class="form-group">
+        <label for="email">Correo electrónico *</label>
+        <input type="email" id="email" name="email" placeholder="tu@email.com" required />
+      </div>
+      <div class="form-group">
+        <label for="telefono">Teléfono</label>
+        <input type="tel" id="telefono" name="telefono" placeholder="+52 000 000 0000" />
+      </div>
+      <div class="form-group">
+        <label for="invitados">Número de personas</label>
+        <select id="invitados" name="invitados">
+          <option value="1">Solo yo (1)</option>
+          <option value="2">2 personas</option>
+          <option value="3">3 personas</option>
+          <option value="4">4 personas</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="mensaje">Mensaje para Sofía</label>
+        <textarea id="mensaje" name="mensaje" rows="4" placeholder="Escribe tus mejores deseos..."></textarea>
+      </div>
+      <button type="submit" class="btn btn-full">Confirmar Asistencia &#10084;</button>
+    </form>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>&#10084; Sofía García &ndash; Mis XV Años &ndash; 20 de Septiembre 2025 &#10084;</p>
+    <p class="footer-sub">Hecho con amor para este día especial</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
